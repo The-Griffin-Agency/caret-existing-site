@@ -1,5 +1,6 @@
 // Keep index.html at the same URL. Update this map for each new image filename.
 const pages = {
+  'homepage': { label: 'Homepage', file: 'homepage-v1a.png', height: 6500 },
   'hub': { label: 'Hub', file: 'product_hub_v1a.png', height: 5770 },
   'capture': { label: 'Capture', file: 'product_capture_v1a.png', height: 6000 },
   'command': { label: 'Command', file: 'product_command_v1a.png', height: 5770 },
