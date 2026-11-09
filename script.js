@@ -4,7 +4,7 @@ const pages = {
   'hub': { label: 'Hub', file: 'product_hub_v1a.png', height: 5770 },
   'capture': { label: 'Capture', file: 'product_capture_v1a.png', height: 6000 },
   'command': { label: 'Command', file: 'product_command_v1a.png', height: 5770 },
-  'court-rules': { label: 'Court Rules', file: 'product_court-rules_v1a.png', height: 6000 },
+  'court-rules': { label: 'Court Rules', file: 'product_court-rules_v1b.png', height: 6000 },
   'caret-why': { label: 'CARET Why', file: 'caret_why_v1a.png', height: 6300 }
 };
 // Increment this when replacing images without changing their filenames.
