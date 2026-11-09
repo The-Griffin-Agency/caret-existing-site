@@ -8,7 +8,7 @@ const pages = {
   'caret-why': { label: 'CARET Why', file: '261109_caret_why_v1.png', height: 6300 }
 };
 // Increment this when replacing images without changing their filenames.
-const IMAGE_VERSION = "20261109-command-v1b";
+const IMAGE_VERSION = "2";
 const canvas = document.getElementById('canvas');
 const mockup = document.getElementById('mockup');
 const error = document.getElementById('error');
