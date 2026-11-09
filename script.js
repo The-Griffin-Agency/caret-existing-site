@@ -3,12 +3,12 @@ const pages = {
   'homepage': { label: 'Homepage', file: '261109_homepage-v1.png', height: 6500 },
   'hub': { label: 'Hub', file: '261109_product_hub_v1.png', height: 5770 },
   'capture': { label: 'Capture', file: '261109_product_capture_v1.png', height: 6000 },
-  'command': { label: 'Command', file: '261109_product_command_v1.png', height: 5770 },
+  'command': { label: 'Command', file: '261109_product_command_v1b.png', height: 5770 },
   'court-rules': { label: 'Court Rules', file: '261109_product_court-rules-v1.png', height: 6000 },
   'caret-why': { label: 'CARET Why', file: '261109_caret_why_v1.png', height: 6300 }
 };
 // Increment this when replacing images without changing their filenames.
-const IMAGE_VERSION = "20261109-latest";
+const IMAGE_VERSION = "20261109-command-v1b";
 const canvas = document.getElementById('canvas');
 const mockup = document.getElementById('mockup');
 const error = document.getElementById('error');
