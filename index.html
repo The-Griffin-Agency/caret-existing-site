@@ -28,49 +28,8 @@
 <main id="canvas" aria-label="Page mockup">
 <img id="mockup" alt="Hub page design" width="1600" height="5770">
 <p id="error" role="alert" hidden>Image could not load. Please reload the page.</p>
-<noscript><p>Please enable JavaScript to browse the review pages.</p><img src="images/261107_CARET_Product_Hub_v2.png" alt="Hub page design" style="width:100%;height:auto"></noscript>
+<noscript><p>Please enable JavaScript to browse the review pages.</p><img src="images/261109_product_hub_v1.png" alt="Hub page design" style="width:100%;height:auto"></noscript>
 </main>
-<script>
-// Keep index.html at the same URL. Update this map for each new image filename.
-const pages = {
-  'homepage': { label: 'Homepage', file: 'homepage-v1a.png', height: 6500 },
-  'hub': { label: 'Hub', file: '261107_CARET_Product_Hub_v2.png', height: 5770 },
-  'capture': { label: 'Capture', file: '261107_product_capture_v1.png', height: 6000 },
-  'command': { label: 'Command', file: '261107_product_command_v1.png', height: 5770 },
-  'court-rules': { label: 'Court Rules', file: '261107_product_court-rules_v1b.png', height: 6000 },
-  'caret-why': { label: 'CARET Why', file: '261107_CARET_Why_v2.png', height: 6300 }
-};
-// Increment this when replacing images without changing their filenames.
-const IMAGE_VERSION = "20261109-2";
-const canvas = document.getElementById('canvas');
-const mockup = document.getElementById('mockup');
-const error = document.getElementById('error');
-function showPage() {
-  const key = Object.hasOwn(pages, location.hash.slice(1)) ? location.hash.slice(1) : 'hub';
-  const page = pages[key];
-  error.hidden = true;
-  mockup.hidden = false;
-  mockup.alt = page.label + ' page design';
-  mockup.height = page.height;
-  mockup.src = 'images/' + page.file + '?v=' + IMAGE_VERSION;
-  document.title = page.label + ' | CARET Product Review';
-  document.querySelectorAll('[data-page]').forEach(link => {
-    if (link.dataset.page === key) link.setAttribute('aria-current', 'page');
-    else link.removeAttribute('aria-current');
-  });
-  window.scrollTo(0, 0);
-  canvas.scrollLeft = 0;
-}
-mockup.addEventListener('error', () => { mockup.hidden = true; error.hidden = false; });
-function setSize(actual) {
-  canvas.classList.toggle('actual', actual);
-  document.getElementById('fit').setAttribute('aria-pressed', String(!actual));
-  document.getElementById('actual').setAttribute('aria-pressed', String(actual));
-}
-document.getElementById('fit').addEventListener('click', () => setSize(false));
-document.getElementById('actual').addEventListener('click', () => setSize(true));
-window.addEventListener('hashchange', showPage);
-showPage();
-</script>
+<script src="script.js?v=20261109-latest"></script>
 </body>
 </html>
