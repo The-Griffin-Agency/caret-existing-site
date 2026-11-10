@@ -1,6 +1,8 @@
 // Keep index.html at the same URL. Update this map for each new image filename.
 const pages = {
-  'homepage': { label: 'Homepage', file: '261109_homepage-v1.png', height: 6500 },
+  'homepage-a': { label: 'Homepage A', file: 'homepage-v2a.png', height: 6500 },
+  'homepage-b': { label: 'Homepage B', file: 'homepage-v2b.png', height: 6500 },
+  'homepage-c': { label: 'Homepage C', file: 'homepage-v2c.png', height: 6500 },
   'hub': { label: 'Hub', file: '261109_product_hub_v1.png', height: 5770 },
   'capture': { label: 'Capture', file: '261109_product_capture_v1.png', height: 6000 },
   'command': { label: 'Command', file: '261109_product_command_v1b.png', height: 5770 },
@@ -13,7 +15,8 @@ const canvas = document.getElementById('canvas');
 const mockup = document.getElementById('mockup');
 const error = document.getElementById('error');
 function showPage() {
-  const key = Object.hasOwn(pages, location.hash.slice(1)) ? location.hash.slice(1) : 'hub';
+  const requested = location.hash.slice(1) === 'homepage' ? 'homepage-a' : location.hash.slice(1);
+  const key = Object.hasOwn(pages, requested) ? requested : 'hub';
   const page = pages[key];
   error.hidden = true;
   mockup.hidden = false;
