@@ -5,7 +5,7 @@ const pages = {
   'homepage-c': { label: 'Homepage C', file: 'homepage-v2c.png', height: 6500 },
   'hub': { label: 'Hub', file: '261109_product_hub_v1.png', height: 5770 },
   'capture': { label: 'Capture', file: '261109_product_capture_v1.png', height: 6000 },
-  'command': { label: 'Command', file: '261109_product_command_v1b.png', height: 5770 },
+  'command': { label: 'Command', file: '261111_product_command.png', height: 7000 },
   'court-rules': { label: 'Court Rules', file: '261109_product_court-rules-v1.png', height: 6000 },
   'caret-why': { label: 'CARET Why', file: '261109_caret_why_v1.png', height: 6300 },
   'fall-email-desktop': { label: 'Fall Email: Desktop', file: 'CARET_2026_Fall_Email_Wide_V1.png', width: 1020, height: 2500 },
