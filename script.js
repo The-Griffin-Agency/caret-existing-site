@@ -7,7 +7,9 @@ const pages = {
   'capture': { label: 'Capture', file: '261109_product_capture_v1.png', height: 6000 },
   'command': { label: 'Command', file: '261109_product_command_v1b.png', height: 5770 },
   'court-rules': { label: 'Court Rules', file: '261109_product_court-rules-v1.png', height: 6000 },
-  'caret-why': { label: 'CARET Why', file: '261109_caret_why_v1.png', height: 6300 }
+  'caret-why': { label: 'CARET Why', file: '261109_caret_why_v1.png', height: 6300 },
+  'fall-email-desktop': { label: 'Fall Email: Desktop', file: 'CARET_2026_Fall_Email_Wide_V1.png', width: 1020, height: 2500 },
+  'fall-email-mobile': { label: 'Fall Email: Mobile', file: 'CARET_2026_Fall_Email_Narrow_V1.png', width: 375, height: 3391 }
 };
 // Increment this when replacing images without changing their filenames.
 const IMAGE_VERSION = "2";
@@ -21,6 +23,8 @@ function showPage() {
   error.hidden = true;
   mockup.hidden = false;
   mockup.alt = page.label + ' page design';
+  mockup.width = page.width || 1600;
+  mockup.style.setProperty("--mockup-width", (page.width || 1600) + "px");
   mockup.height = page.height;
   mockup.src = 'images/' + page.file + '?v=' + IMAGE_VERSION;
   document.title = page.label + ' | CARET Product Review';
